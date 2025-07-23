@@ -1,4 +1,5 @@
 const formulario = document.querySelector('#formulario');
+
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 formulario.addEventListener('submit', function(event) {
@@ -12,7 +13,7 @@ formulario.addEventListener('submit', function(event) {
       txtNome.innerHTML = 'O Nome deve ter no minimo 3 caracteres.';
       campoNome.focus();
       return;
-    }else{
+    } else {
       txtNome.innerHTML = '';
     }
   
@@ -23,7 +24,7 @@ formulario.addEventListener('submit', function(event) {
       txtEmail.innerHTML = 'Digite um E-mail válido.';
       campoEmail.focus();
       return;
-    }else{
+    } else {
       txtEmail.innerHTML = '';
     }
   
@@ -34,16 +35,14 @@ formulario.addEventListener('submit', function(event) {
       txtSubject.innerHTML = 'O Assunto deve ter no minimo 5 caracteres.';
       campoSubject.focus();
       return;
-    }else{
+    } else {
       txtSubject.innerHTML = '';
     }
 
     const campoMessage = document.querySelector('#message');
 
-    // Se todas as validações passarem
     window.alert("Formulário Enviado com Sucesso!");
   
-    // Limpa os campos do formulário
     campoNome.value = ''
     campoEmail.value = ''
     campoSubject.value = ''
