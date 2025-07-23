@@ -2,115 +2,121 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Projeto Portfólio">
-		<meta name="author" content="Generation Brasil">
+		<meta name="description" content="Entre em contato com Julio Teixeira, Desenvolvedor Full Stack.">
+		<meta name="author" content="Julio Teixeira">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
+		
+		<link rel="icon" type="image/svg" href="https://github.githubassets.com/favicons/favicon.svg" />
+
+		<link rel="stylesheet" href="./assets/css/style.css" />
+
 		<title>Meu Perfil</title>
 	</head>
 	<body>
-		<!-- Cabeçalho da Página (header) -->
+
 		<header>
-			<!-- Div Conteudo do Cabeçalho -->
-			<div id="header_content">
-				<!-- Titulo do Cabeçalho -->
+
+			<div id="header_content" class="flex">
+
 				<div id="titulo">
-					<!-- Seu nome -->
-					<h1>Generation Brasil</h1>
+
+					<h1>Julio Teixeira</h1>
+
 				</div>
 
-				<!-- Conteudo do Menu da Página (header) -->
 				<div id="menu">
-					<!-- Menu da Página -->
+
 					<nav>
-						<!-- Marcadores não ordenados + links -->
+
 						<ul id="menu">
 							<li>
-								<a href="index.html"> Home </a>
+								<a href="index.html">Home</a>
 							</li>
 							<li>
-								<a href="contato.html"> Contato </a>
+								<a href="contato.html">Contato</a>
 							</li>
 						</ul>
+
 					</nav>
+
 				</div>
+
 			</div>
+
 		</header>
 
-		<!-- Seção Principal da Página (main) -->
 		<main>
-			
-			<!-- Seção Formulário de Contato e Redes Sociais -->
-			<section id="contact">
-				
-				<!-- Seção do Formulário-->
-				<form action="#" method="submit" id="formulario">
-					<label for="nome">Nome: </label>
-					<input
-						id="name"
-						type="text"
-						name="name"
-						placeholder="Digite seu nome"
-						required
+
+			<section id="about" class="flex_start">
+
+				<h2>Sobre mim</h2>
+
+				<div id="conteudo" class="flex">
+
+					<img
+						src="https://github.com/Juliotbr.png"
+						alt="Foto do Julio Teixeira"
+						class="img_profile"
 					/>
-					<span id="txtNome"></span>
 
-					<label for="email">Email: </label>
-					<input
-						id="email"
-						type="email"
-						name="email"
-						placeholder="Digite seu email"
-						required
-					/>
-					<span id="txtEmail"></span>
+					<article id="sobre_texto">
 
-					<label for="subject">Assunto: </label>
-					<input
-						id="subject"
-						type="text"
-						name="subject"
-						placeholder="Digite o título da mensagem"
-						required
-					/>
-					<span id="txtSubject"></span>
+						<p>
+							Profissional em transição de carreira para a área de tecnologia, com formação em andamento como
+							Desenvolvedor Full Stack JavaScript. Possuo base em desenvolvimento Frontend com React.js e Backend
+							com Node.js, além de experiência prévia em logística e atendimento ao cliente (SAC), o que contribuiu para
+							o desenvolvimento de uma comunicação eficaz e foco em soluções. Busco uma oportunidade para aplicar
+							e expandir meus conhecimentos, contribuindo em projetos de desenvolvimento web. 
+						</p>
 
-					<label for="message">Mensagem: </label>
-					<textarea
-						id="message"
-						name="message"
-						placeholder="Digite sua mensagem"
-						required
-					>
-					</textarea>
+					</article>
 
-					<button type="submit">Enviar</button>
-				</form>
+				</div>
 
-				<!-- Seção do Google Maps -->
-				<article id="mapa">
-
-				</article>
 			</section>
+
+			<section id="video" class="flex_start">
+
+				<h2>Vídeo exemplo:</h2>
+
+				<div id="youtube" class="flex">
+
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/uz2S8a2r5j8?si=Dlr2ogOdRRPyfyeG"
+						frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					>
+					</iframe>
+
+				</div>
+
+			</section>
+			
 		</main>
 
-		<!-- Rodapé da Página (footer) -->
-		<footer>
-			<!-- Seção de Contato - Redes Sociais -->
+		<footer class="flex">
+
 			<section id="redes_sociais">
-				<a href="">
-					<img src="assets/img/linkedin.svg" alt="LinkedIn" />
+
+				<a href="https://www.linkedin.com/in/julioteixeirafloriano/">
+					<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
+				</a>
+				<a href="https://github.com/Juliotbr">
+					<img src="assets/img/github.svg" alt="Github" class="social_icon"/>
 				</a>
 				<a href="">
-					<img src="assets/img/github.svg" alt="Github" />
 				</a>
-				<a href="">
-					<img src="assets/img/instagram.svg" alt="Instagram" />
-				</a>
+
 			</section>
 
-			<h3>Feito com 🧡 por Generation Brasil - 2024</h3>
+			<h3>Feito por Julio Teixeira - 2025</h3>
+
 		</footer>
+
 	</body>
 </html>
-
